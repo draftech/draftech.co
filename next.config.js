@@ -16,6 +16,7 @@ module.exports = withFonts(
             use: {
               loader: "url-loader",
             },
+            target: "serverless",
           });
           config.resolve.modules.push(path.resolve("./"));
           return config;
