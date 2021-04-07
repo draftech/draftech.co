@@ -1,0 +1,6 @@
+[[redirects]]
+ from = "https://empleo.draftech.co/*"
+ to = "https://docs.google.com/forms/d/1QBFMTjM0asL8mXuBJ6JA_mglDPBIKsWHmPGDWl0MDzg/edit:splat"
+ status = 200
+ force = true # COMMENT: ensure that we always redirect
+ headers = {X-From = "Netlify"}
