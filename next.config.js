@@ -10,13 +10,13 @@ module.exports = withFonts(
   withCSS(
     withImages(
       withSass({
+        target: 'serverless',
         webpack(config, options) {
           config.module.rules.push({
             test: /\.(eot|ttf|woff|woff2)$/,
             use: {
               loader: "url-loader",
             },
-            target: "serverless",
           });
           config.resolve.modules.push(path.resolve("./"));
           return config;
